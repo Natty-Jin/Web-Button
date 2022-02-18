@@ -10,26 +10,25 @@
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <input type="button" value="day" onclick="
-    const target = document.querySelector('body');
-    if (this.value ==='day'){
-        target.style.backgroundColor='beige';
-        target.style.color='black';
-        this.value ='twilight';
+    <input id="night_day" type="button" value="day" onclick="
+    if (document.querySelector('#night_day').value ==='day'){
+        document.querySelector('body').style.backgroundColor='beige';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#night_day').value ='twilight';
 
-    }else if(this.value ==='twilight'){
-        target.style.backgroundColor='orange';
-        target.style.color ='red';
-        this.value ='night';
+    }else if(document.querySelector('#night_day').value ==='twilight'){
+        document.querySelector('body').style.backgroundColor='orange';
+        document.querySelector('body').style.color ='red';
+        document.querySelector('#night_day').value ='night';
 
-    }else if(this.value ==='night'){
-        target.style.backgroundColor='black';
-        target.style.color ='white';
-        this.value ='dawn';
+    }else if(document.querySelector('#night_day').value ==='night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color ='white';
+        document.querySelector('#night_day').value ='dawn';
     } else {
-        target.style.backgroundColor='gray';
-        target.style.color ='white';
-        this.value ='day';
+        document.querySelector('body').style.backgroundColor='gray';
+        document.querySelector('body').style.color ='white';
+        document.querySelector('#night_day').value ='day';
     }
     ">
     <ol>
@@ -53,27 +52,6 @@
         someone who same as me, we can going to go overseas or abroad of attraction.
         I am really really like to go abroad travel.
     </p>
-    <input type="button" value="day" onclick="
-    if (this.value ==='day'){
-        document.querySelector('body').style.backgroundColor='beige';
-        document.querySelector('body').style.color='black';
-        this.value ='twilight';
-
-    }else if(this.value ==='twilight'){
-        document.querySelector('body').style.backgroundColor='orange';
-        document.querySelector('body').style.color ='red';
-        this.value ='night';
-
-    }else if(this.value ==='night'){
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color ='white';
-        this.value ='dawn';
-    } else {
-        document.querySelector('body').style.backgroundColor='gray';
-        document.querySelector('body').style.color ='white';
-        this.value ='day';
-    }
-    ">
     <p>
     <div id="disqus_thread"></div>
     <script>
